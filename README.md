@@ -49,7 +49,7 @@ docker-compose up
 ```
 ### Verify apache
 ```
-verify:  localhost:90
+verify:  localhost:8000
 ```
 
 ## Docker Machine
@@ -58,9 +58,8 @@ verify:  localhost:90
 docker-machine --version
 docker-machine create --driver virtualbox dev
 docker-machine ls
-docker-machine stop dev
-docker-machine start dev
 docker-machine ssh dev
+docker-machine stop dev
 docker-machine rm dev
 ```
 

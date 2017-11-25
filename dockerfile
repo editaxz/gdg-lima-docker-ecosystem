@@ -1,4 +1,4 @@
-ROM ubuntu
+FROM ubuntu
 MAINTAINER Edith Puclla
 
 RUN apt-get update
