@@ -1,47 +1,48 @@
 # DOCKER ECOSYSTEM
 
 ## Imagen and container
-## Pull an nginx imagen 
+### Pull an nginx imagen 
 ```
 docker pull nginx
 ```
-## Create a container 
+### Create a container 
 ```
 docker run --name mynginx -d -p 8080:80 nginx
 ```
 ## Docker hub
-## tag the imagen 
+### tag the imagen 
 ```
  docker tag nginx editaxz/mynginx
 ```
-## Login dockehub 
+### Login dockehub 
 ```
 docker login
 Username:editaxz
 Password:*******
 ```
-## Push imagen docker hub
+### Push imagen docker hub
 ```
 docker push editaxz/mynginx
 ```
-## Verify docker hub
+### Verify docker hub
 ```
 https://hub.docker.com/
 ```
 
-## Edit dockerfile 
+## DockerFile
+### Edit dockerfile 
 ```
 sudo nano dockerfile
 ```
-## Build dockerfile 
+### Build dockerfile 
 ```
 docker build -t editaxz/apache .
 ```
-## Create the container
+### Create the container
 ```
 docker run --name apache -d -p 90:80 editaxz/apache
 ```
-## Verify apache
+### Verify apache
 ```
 verify:  localhost:90
 ```
