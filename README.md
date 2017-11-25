@@ -47,22 +47,30 @@ docker run --name apache -d -p 90:80 editaxz/apache
 verify:  localhost:90
 ```
 
-
 ## Docker Compose
-### Edit dockerfile 
+### Edit docker-compose.yml 
 ```
-sudo nano dockerfile
+sudo nano docker-compose.yml
 ```
-### Build dockerfile 
+### Up docker-compose.yml 
 ```
-docker build -t editaxz/apache .
-```
-### Create the container
-```
-docker run --name apache -d -p 90:80 editaxz/apache
+docker-compose up
 ```
 ### Verify apache
 ```
 verify:  localhost:90
 ```
+
+## Docker Machine
+### Edit docker-compose.yml 
+```
+docker-machine --version
+docker-machine create --driver virtualbox dev
+docker-machine ls
+docker-machine stop dev
+docker-machine start dev
+docker-machine ssh dev
+docker-machine rm dev
+```
+
 
