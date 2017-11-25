@@ -30,16 +30,10 @@ https://hub.docker.com/
 ```
 
 ## DockerFile
-### Edit dockerfile 
+### Create dockerfile , build and create the container
 ```
 sudo nano dockerfile
-```
-### Build dockerfile 
-```
 docker build -t editaxz/apache .
-```
-### Create the container
-```
 docker run --name apache -d -p 90:80 editaxz/apache
 ```
 ### Verify apache
@@ -48,12 +42,9 @@ verify:  localhost:90
 ```
 
 ## Docker Compose
-### Edit docker-compose.yml 
+### Create docker-compose.yml and up
 ```
 sudo nano docker-compose.yml
-```
-### Up docker-compose.yml 
-```
 docker-compose up
 ```
 ### Verify apache
